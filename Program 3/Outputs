@@ -1,0 +1,7 @@
+Part 1 Output:
+Three files with 100,000 random integers created successfully.
+
+Part 2 Sorting Results:
+Trial 1 (../Part1/Part1Data1.txt): Sorted in 0.049 seconds.
+Trial 2 (../Part1/Part1Data2.txt): Sorted in 0.049 seconds.
+Trial 3 (../Part1/Part1Data3.txt): Sorted in 0.047 seconds.
