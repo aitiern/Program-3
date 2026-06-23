@@ -3,13 +3,13 @@
 
 // Class object to create a file of random integers
 class filer {
-public:
+   public:
     void makefile(int n, int range, string file_name);
     // Writes `n` random integers in range [0, range] to file_name (one per line)
 
-private:
+   private:
     int next_number(int range);
     // Returns random int in [0, range]
 };
 
-#endif // FILER_H
+#endif  // FILER_H

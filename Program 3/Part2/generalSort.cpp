@@ -1,5 +1,6 @@
 #include "generalSort.h"
-#include <algorithm> // for std::swap
+
+#include <algorithm>  // for std::swap
 
 // Sift-down heapify for 0-based index heap
 static void heapify(vector<short>& a, int n, int i) {
@@ -25,8 +26,7 @@ void heapSort(vector<short>& a) {
     }
     // Extract elements from heap one by one
     for (int end = n - 1; end > 0; --end) {
-        swap(a[0], a[end]);          // move current max to its final place
-        heapify(a, end, 0);          // restore heap in the reduced array
+        swap(a[0], a[end]);  // move current max to its final place
+        heapify(a, end, 0);  // restore heap in the reduced array
     }
 }
-

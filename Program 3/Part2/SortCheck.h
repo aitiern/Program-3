@@ -6,4 +6,4 @@
 // Returns true if arr is non-decreasing
 bool SortCheck(const vector<short>& arr);
 
-#endif // SORTCHECK_H
+#endif  // SORTCHECK_H

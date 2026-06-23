@@ -6,4 +6,4 @@
 // Heapsort on vector<short> (in-place, ascending)
 void heapSort(vector<short>& arr);
 
-#endif // GENERALSORT_H
+#endif  // GENERALSORT_H

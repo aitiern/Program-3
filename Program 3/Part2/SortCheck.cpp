@@ -6,4 +6,3 @@ bool SortCheck(const vector<short>& arr) {
     }
     return true;
 }
-

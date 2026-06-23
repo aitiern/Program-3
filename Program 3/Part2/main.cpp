@@ -1,6 +1,6 @@
-#include "utility.h"
-#include "generalSort.h"
 #include "SortCheck.h"
+#include "generalSort.h"
+#include "utility.h"
 
 static bool readFileToVector(const string& path, vector<short>& out) {
     ifstream in(path);
@@ -27,11 +27,8 @@ static bool writeVectorToFile(const string& path, const vector<short>& data) {
 
 int main() {
     // ✅ Adjusted to point to Part1 folder
-    vector<string> inputFiles = {
-        "../Part1/Part1Data1.txt",
-        "../Part1/Part1Data2.txt",
-        "../Part1/Part1Data3.txt"
-    };
+    vector<string> inputFiles = {"../Part1/Part1Data1.txt", "../Part1/Part1Data2.txt",
+                                 "../Part1/Part1Data3.txt"};
 
     cout.setf(ios::fixed);
     cout.setf(ios::showpoint);
@@ -51,8 +48,7 @@ int main() {
         double secs = t.elapsed_time();
 
         bool ok = SortCheck(data);
-        cout << "Trial " << trial << " (" << inPath << "): "
-             << (ok ? "Sorted" : "NOT Sorted")
+        cout << "Trial " << trial << " (" << inPath << "): " << (ok ? "Sorted" : "NOT Sorted")
              << " in " << secs << " seconds.\n";
 
         const string outPath = "Sorted" + to_string(trial) + ".txt";
@@ -62,4 +58,3 @@ int main() {
     }
     return 0;
 }
-

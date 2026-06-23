@@ -1,5 +1,6 @@
-#include "utility.h"
 #include "filer.h"
+
+#include "utility.h"
 
 void filer::makefile(int n, int range, string file_name) {
     ofstream outfile;
