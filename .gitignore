@@ -1,0 +1,16 @@
+# Compiled binaries / build artifacts
+*.exe
+*.o
+*.obj
+*.out
+a.out
+
+# Generated data files
+**/Part1Data*.txt
+**/Sorted*.txt
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
